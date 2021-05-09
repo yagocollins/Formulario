@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Formulário Basico</h1>
+    <hr> 
+    <h1 class="basico">meu amigo gato - Pet shop</h1>
+    <h1>Boletim mensal</h1>
+    <h3>Assine já!</h3>
+    <p><strong>Fazendo sua assinatura</strong><br><strong>Você receberá mensalmente informações sobre nossos produtos, serviços e descontos.</strong></p>
+
+    <form>
+        <fieldset id="ident_dono">
+            <legend>Identificação do dono do animal</legend>
+              
+        <p><label for="nome">Nome:</label> <input type="text" name="nome"
+             id="nome" placeholder="Digite seu nome completo" size="30" ></p>
+        <p><label for="endereco">Endereço:</label> <input type="text" name="endereco"
+            id="endereco" placeholder="Digite o seu endereço" size="50"></p>
+        <p><label for="cep">CEP:</label> <input type="text" name="cep"
+            id="cep" placeholder="xxxxxxxx-xx" size="10"></P> 
+        <p><label for="email">Email:</label> <input type="text" name="emal"
+            id="email" placeholder="Digite seu endereço de email" size="30"></P> 
+        <p><label for="tel_dono">Tel/Cel:</label> <input type="text" name="tel_dono"
+            id="tel_dono" placeholder="00 00000-0000" size="12"></P>
+        </fieldset>
+
+        <fieldset id="indent_aninaml"> <legend>Animal</legend> 
+            <p><label for="nome do animal">Nome:</label> <input type="text" name="nome do animal"
+                id="nome do animal" placeholder="Digite o nome do animal" size="25"></P>
+                 
+                <p>
+                    Porte do cão:
+                    <input type="radio" name="porte do aninal"
+                    value="animal pequeno"checked>pequeno
+                    <input type="radio" name="porte do animal" id="animal medio" 
+                    value="animal medio">médio
+                    <input type="radio" name="porte do animal" id="animal grande"
+                    value="animal grande">Grande 
+                </p> 
+                
+                <p>
+                    Tipo de tosa:
+                    <select name="tipo de tosa" id="tipo de tosa">
+                        <option value="">Nenhuma</option>
+                        <option value="padrão"> Tosa padrão</option>
+                        <option value="higienica"> Tosa higienica</option>
+                        <option value="tesoura"> Tosa na tesoura</option>
+                        <option value="raca"> Tosa de Raça</option>
+                        <option value="bebe"> Tosa Bebê</option>                         
+                    </select>
+                </p>
+                       <p>Observações:
+                           <textarea name="obs" id="obs" placeholder="Digite alguma informação sobre o animal se necessário"></textarea> 
+                       </p>         
+        </fieldset>          
+              
+        <fieldset id="ident_marcacao">
+            <legend>Horário - (Não atendemos aos domingos e feriados</legend>
+            <p>Indique os dias da semana se sua preferencia:<br>
+                <input type="checkbox" name="semana" value="segunda"/>Segunda-feira
+                <input type="checkbox" name="semana" value="terca"/>Terca-feira
+                <input type="checkbox" name="semana" value="quarta"/>Quarta-feira
+                <input type="checkbox" name="semana" value="quinta"/>Quinta-feira
+                <input type="checkbox" name="semana" value="sexta"/>Sexta-feira
+                <input type="checkbox" name="semana" value="sabado"/>Sabado-feira              
+            </p>
+            
+        </fieldset>
+        <input type="submit" value="Enviar">      
+
+        <fieldset id="Marcas_de_ração"> <legend>Marcas de Rações</legend>
+            <p>Indique as marcas de rações de sua preferencia:<br>
+                <br>
+                <input type="checkbox" name="rações" value="idrações"/>Ração Premier Pet Golden Gatos Castrados
+                <input type="checkbox" name="rações" value="idrações"/>Ração Royal Canin Cat Premium Filhotes 
+                <input type="checkbox" name="rações" value="idrações"/>Ração GranPlus Adultos  <br>
+                <input type="checkbox" name="rações" value="idrações"/>Ração Whiskas Adultos              
+                <input type="checkbox" name="rações" value="idrações"/>Ração Farmina Matisse Adultos 
+                <input type="checkbox" name="rações" value="idrações"/>Ração Royal Canin Exigent 
+
+            </p>
+
+        </fieldset>
+        
+        <input type="submit" value="Enviar"> 
+        <br> <br>
+        
+         
+        <label for="ração">Digite a ração preferida:</label>
+        <input type="text" name="ração" id="racao" list="ração"> 
+
+        <datalist id="ração">
+            <option value=" Urinari">
+            <option value=" Colden">
+            <option value=" Royal Canin Cat Premium Filhotes">
+            <option value=" GranPlus Adultos">
+            <option value=" Whiskas Adultos">
+            <option value=" Farmina Matisse Adultos">
+            <option value=" Royal Canin Exigent">
+            </datalist>
+                <br><br> 
+                <br>       
+
+        <button type="submit" name="envio" value="Enviar">
+        <p>Solicitar Rações</p>
+    </button>          
+                     
+    </form> 
+    <fieldset class="data"> 
+        <p class="letra">Controles de datas e horas.</p>
+    
+        <label for="data">Data de nascimento:</label>
+            <input type="date" id="data" name="dataNasc">
+        <br>
+        <label for="hora">Hora do Castrados:</label>
+            <input type="time" id="hora" name="hora do cadastro">
+        <br>
+        <label for="semana">Semana do ano:</label>
+            <input type="week" name="semana" id="semana">
+        <br>
+        <label for="mes">Mes do ano:</label>
+            <input type="month" name="mes" id="mes">
+        <br>
+        <br>
+        <input type="submit" value="Enviar"/> 
+    </fieldset>
+</body>
+</html>

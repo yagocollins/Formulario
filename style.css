@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+h1#principal {
+    text-align: center;
+    background-color: blueviolet;
+    color:brown;
+    
+}
+
+body {
+    background-color: rgb(170, 232, 240);
+}
+
+.basico {
+    color:black;
+    text-align: center;
+}
+
+form {
+    background-color:rgba(81, 87, 85, 0.849);
+    margin: 30px 0;
+    padding: 20px;    
+}
+
+label {
+    display: block;
+    margin-top: 7px;
+   
+}
+
+input#nome, input#email, input#endereco { 
+      background-color: transparent;
+      border:none;
+      border-bottom: #000 solid 1px;
+      font-size: 1.2em;
+      color: #fff;
+      width: 800px; 
+}
+
+::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em; 
+}
+::-moz-placeholder { /* Firefox */
+    color: #ddd;
+    font-style: italic;
+    font-size: .8em; 
+}
+
+
+input[type="submit"] {
+    background-color: #e71b22;
+    border-radius: 30px;
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px #000;
+    cursor:pointer; 
+}
+
+.data {
+    color: darkgreen;
+
+}
+.letra {
+    font-size: 20;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
